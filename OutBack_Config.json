@@ -1,0 +1,27 @@
+{
+    "VSS_Config": {
+        "SourceDrive": "C:\\",
+        "SourceFolder": "Outlook",
+        "TempDestination": "C:\\Temp\\Backups\\Outlook",
+        "ShadowLink": "C:\\VSS_Snapshot_Link"
+    },
+    "Zip_Config": {
+        "SourceDir": "C:\\Temp\\Backups\\Outlook\\*",
+        "ZipExe": "C:\\Program Files\\7-Zip\\7z.exe",
+        "DateFormat": "MM-dd-yyyy"
+    },
+    "Copy7ZipFileToServer_Config": {
+        "DestinationPath": "\\\\YOURSERVERNAMEHERE\\YOURSHARENAMEHERE",
+        "SourcePath": "C:\\Temp\\Backups",
+        "MaxFileCount": 2,
+        "FilePattern": "{0}-Outlook-*.7z"
+    },
+    "Email_Config": {
+        "SmtpServer": "YOURSMTPSERVERHERE",
+        "SmtpPort": 587,
+        "Username": "YOURSMTPUSERNAMEHERE",
+        "Password": "YOURSMTPPASSWORDHERE",
+        "From": "YOURFROMNAMEHERE <YOURFROMEMAILADDRESSHERE>",
+        "To": "YOURRECIPIENTNAMEHERE <YOURRECIPIENTEMAILADDRESSHERE>"
+    }
+}
